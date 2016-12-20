@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace VoxelTest
+namespace DopaVoxel
 {
     enum BlocMaterial { Air = 0, Earth, Stone, Wood, Sand, Foliage, Plank, TreeSprout, Grass, FlowerRed, FlowerYellow, Mushroom, Reed }
     enum BlocSide { FrontX = 0, BackX, FrontY, BackY, FrontZ, BackZ }

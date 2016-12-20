@@ -4,7 +4,7 @@ using Microsoft.Xna.Framework.Input;
 using System;
 using System.Collections.Generic;
 
-namespace VoxelTest
+namespace DopaVoxel
 {
     public class Game1 : Game
     {

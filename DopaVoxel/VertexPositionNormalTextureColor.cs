@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace VoxelTest
+namespace DopaVoxel
 {
     public struct VertexPositionNormalTextureColor : IVertexType
     {

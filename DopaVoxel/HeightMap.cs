@@ -8,7 +8,7 @@ using System.IO;
 using System.IO.Compression;
 using System.Threading;
 
-namespace VoxelTest
+namespace DopaVoxel
 {
     class HeightMap
     {
