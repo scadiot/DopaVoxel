@@ -21,10 +21,16 @@ namespace DopaVoxel
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
+            graphics.PreparingDeviceSettings += GraphicsDeviceManager_PreparingDeviceSettings;
             graphics.PreferredBackBufferWidth = 1024;
             graphics.PreferredBackBufferHeight = 768;
             graphics.ApplyChanges();
             Content.RootDirectory = "Content";
+        }
+
+        private void GraphicsDeviceManager_PreparingDeviceSettings(object sender, PreparingDeviceSettingsEventArgs e)
+        {
+            e.GraphicsDeviceInformation.GraphicsProfile = GraphicsProfile.HiDef;
         }
 
         float _cameraYaw = 0;
@@ -37,7 +43,7 @@ namespace DopaVoxel
         {
             base.Initialize();
 
-            _fpsMode = false;
+            _fpsMode = true;
             _sunLuminosity = 1.0f;
 
             _cameraPosition = new Vector3();
@@ -48,7 +54,6 @@ namespace DopaVoxel
             _chunkManager.GraphicsDevice = GraphicsDevice;
             _chunkManager.Initialize();
         }
-
 
 
         protected override void LoadContent()
